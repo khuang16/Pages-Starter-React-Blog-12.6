@@ -17,3 +17,8 @@
 .secondary-cta {
   @apply bg-sky-700 hover:bg-sky-800;
 }
+
+@font-face {
+  font-family: "Changa";
+  src: url(assets/fonts/Changa-VariableFont_wght.ttf);
+}
