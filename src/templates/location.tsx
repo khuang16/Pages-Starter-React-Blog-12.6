@@ -26,7 +26,7 @@ import {
   GetHeadConfig,
   HeadConfig,
 } from "@yext/pages";
-import PageLayout from "../components/page-layout";
+import PageLayout from "../components/layouts/page-layout";
 
 /**
  * Required when Knowledge Graph data is used for a template.

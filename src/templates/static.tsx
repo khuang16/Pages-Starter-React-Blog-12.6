@@ -14,9 +14,9 @@ import {
   GetHeadConfig,
   HeadConfig,
 } from "@yext/pages";
-import PageLayout from "../components/page-layout";
 import { ExternalImage } from "../types/ExternalImage";
 import SocialLinks from "../components/social-links";
+import HomeLayout from "../components/layouts/home-layout";
 
 /**
  * Not required depending on your use case.
@@ -88,64 +88,92 @@ const Static: Template<ExternalImageRenderData> = ({
   document,
   externalImage,
 }) => {
+  const renderGreeting = (): JSX.Element => (
+    <div className="centered-container flex flex-col justify-center ">
+      <h1 className="text-7xl font-black">Hey! How&apos;s it going?</h1>
+      <div className="flex items-end justify-between">
+        <div>
+          <h2 className="text-4xl font-semibold mt-8">I&apos;m Aaron</h2>
+          <p className="text-xl font-normal mt-2">
+            Developer Evangelist @ Yext
+          </p>
+        </div>
+        <div>
+          <img
+            className="rounded-full w-20"
+            src="https://media-exp1.licdn.com/dms/image/C4E03AQGjT_PixNqeEg/profile-displayphoto-shrink_800_800/0/1586390843072?e=1666224000&v=beta&t=t44cL-o0qzBbGggmGrpAGcDbo90AcLmqStUkz6gijbQ"
+          />
+        </div>
+      </div>
+    </div>
+  );
+
+  const renderInfo = (): JSX.Element => (
+    <div className="centered-container">
+      <nav className=" py-10 hidden md:flex  items-center gap-8 text-4xl font-bold">
+        <div>
+          <a className="border-b-4">Home</a>
+        </div>
+        <div>
+          <a className="hover:border-b-4">Blog</a>
+        </div>
+        <div>
+          <a className="hover:border-b-4">Videos</a>
+        </div>
+        <div>
+          <a className="hover:border-b-4">Favorites</a>
+        </div>
+      </nav>
+      <div className="px-8 py-8  bg-gray-200 rounded-2xl shadow-lg mt-8">
+        <h2 className="font-bold text-xl">Introduction</h2>
+        <p className="pt-2">
+          I&apos;m a developer evangelist at Yext. I&apos;m here to help you
+          build amazing things with Yext. Outside of work, I love to ski, read,
+          listen to music, play video games, and spend time with my friends and
+          family. I moved to NYC about a year ago and I&apos;m loving it.
+          I&apos;m a developer evangelist at Yext. I&apos;m here to help you
+          build amazing things with Yext. Outside of work, I love to ski, read,
+          listen to music, play video games, and spend time with my friends and
+          family. I moved to NYC about a year ago and I&apos;m loving it.
+          I&apos;m a developer evangelist at Yext. I&apos;m here to help you
+          build amazing things with Yext. Outside of work, I love to ski, read,
+          listen to music, play video games, and spend time with my friends and
+          family. I moved to NYC about a year ago and I&apos;m loving it.
+          I&apos;m a developer evangelist at Yext. I&apos;m here to help you
+          build amazing things with Yext. Outside of work, I love to ski, read,
+          listen to music, play video games, and spend time with my friends and
+          family. I moved to NYC about a year ago and I&apos;m loving it.
+          I&apos;m a developer evangelist at Yext. I&apos;m here to help you
+          build amazing things with Yext. Outside of work, I love to ski, read,
+          listen to music, play video games, and spend time with my friends and
+          family. I moved to NYC about a year ago and I&apos;m loving it.
+          I&apos;m a developer evangelist at Yext. I&apos;m here to help you
+          build amazing things with Yext. Outside of work, I love to ski, read,
+          listen to music, play video games, and spend time with my friends and
+          family. I moved to NYC about a year ago and I&apos;m loving it.
+          I&apos;m a developer evangelist at Yext. I&apos;m here to help you
+          build amazing things with Yext. Outside of work, I love to ski, read,
+          listen to music, play video games, and spend time with my friends and
+          family. I moved to NYC about a year ago and I&apos;m loving it.
+          I&apos;m a developer evangelist at Yext. I&apos;m here to help you
+          build amazing things with Yext. Outside of work, I love to ski, read,
+          listen to music, play video games, and spend time with my friends and
+          family. I moved to NYC about a year ago and I&apos;m loving it.
+        </p>
+      </div>
+      <div className="mt-4">
+        <SocialLinks
+          twitter="https://twitter.com/apav_dev"
+          github="https://github.com/apav-dev"
+          dev_to="https://dev.to/apavlick"
+        />
+      </div>
+    </div>
+  );
+
   return (
     <>
-      <PageLayout>
-        <div className="flex md:fixed min-h-[50vh] md:h-full top-0 w-full md:w-1/2 bg-gray-600 text-gray-50">
-          <div className="centered-container flex flex-col justify-center ">
-            <h1 className="text-7xl font-black">Hey! How&apos;s it going?</h1>
-            <div className="flex items-end justify-between">
-              <div>
-                <h2 className="text-4xl font-semibold mt-8">I&apos;m Aaron</h2>
-                <p className="text-xl font-normal mt-2">
-                  Developer Evangelist @ Yext
-                </p>
-              </div>
-              <div>
-                <img
-                  className="rounded-full w-20"
-                  src="https://media-exp1.licdn.com/dms/image/C4E03AQGjT_PixNqeEg/profile-displayphoto-shrink_800_800/0/1586390843072?e=1666224000&v=beta&t=t44cL-o0qzBbGggmGrpAGcDbo90AcLmqStUkz6gijbQ"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="md:fixed md:h-full h-1/2 bottom-0 md:top-0 md:right-0 w-full md:w-1/2">
-          <div className="centered-container">
-            <nav className=" py-10 hidden md:flex  items-center gap-8 text-4xl font-bold">
-              <div>
-                <a className="border-b-4">Home</a>
-              </div>
-              <div>
-                <a className="hover:border-b-4">Blog</a>
-              </div>
-              <div>
-                <a className="hover:border-b-4">Videos</a>
-              </div>
-              <div>
-                <a className="hover:border-b-4">Favorites</a>
-              </div>
-            </nav>
-            <div className="px-8 py-8  bg-gray-200 rounded-2xl shadow-lg mt-8">
-              <h2 className="font-bold text-xl">Introduction</h2>
-              <p className="pt-2">
-                I&apos;m a developer evangelist at Yext. I&apos;m here to help
-                you build amazing things with Yext. Outside of work, I love to
-                ski, read, listen to music, play video games, and spend time
-                with my friends and family. I moved to NYC about a year ago and
-                I&apos;m loving it.
-              </p>
-            </div>
-            <div className="mt-4">
-              <SocialLinks
-                twitter="https://twitter.com/apav_dev"
-                github="https://github.com/apav-dev"
-                dev_to="https://dev.to/apavlick"
-              />
-            </div>
-          </div>
-        </div>
-      </PageLayout>
+      <HomeLayout GreetingContent={renderGreeting} InfoContent={renderInfo} />
     </>
   );
 };
