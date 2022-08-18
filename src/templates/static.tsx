@@ -89,8 +89,8 @@ const Static: Template<ExternalImageRenderData> = ({
   externalImage,
 }) => {
   const renderGreeting = (): JSX.Element => (
-    <div className="centered-container flex flex-col justify-center ">
-      <h1 className="text-7xl font-black">Hey! How&apos;s it going?</h1>
+    <div className="px-5 md:px-14 flex flex-col justify-center items-center">
+      <h1 className="text-7xl font-black">Hey there.</h1>
       <div className="flex items-end justify-between">
         <div>
           <h2 className="text-4xl font-semibold mt-8">I&apos;m Aaron</h2>
@@ -110,14 +110,6 @@ const Static: Template<ExternalImageRenderData> = ({
 
   const renderInfo = (): JSX.Element => (
     <div className="centered-container">
-      <nav className=" py-10 hidden md:flex  items-center gap-8 text-4xl font-bold">
-        <div>
-          <a className="border-b-4">Home</a>
-        </div>
-        <div>
-          <a className="hover:border-b-4">Blog</a>
-        </div>
-      </nav>
       <div className="px-8 py-8  bg-gray-200 rounded-2xl shadow-lg mt-8">
         <h2 className="font-bold text-xl">Introduction</h2>
         <p className="pt-2">
