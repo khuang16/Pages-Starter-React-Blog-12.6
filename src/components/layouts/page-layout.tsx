@@ -5,7 +5,7 @@ type Props = {
 };
 
 const PageLayout = ({ children }: Props) => {
-  return <div className="min-h-screen font-display relative">{children}</div>;
+  return <div className="min-h-screen relative font-display ">{children}</div>;
 };
 
 export default PageLayout;

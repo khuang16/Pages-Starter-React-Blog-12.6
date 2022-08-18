@@ -117,12 +117,6 @@ const Static: Template<ExternalImageRenderData> = ({
         <div>
           <a className="hover:border-b-4">Blog</a>
         </div>
-        <div>
-          <a className="hover:border-b-4">Videos</a>
-        </div>
-        <div>
-          <a className="hover:border-b-4">Favorites</a>
-        </div>
       </nav>
       <div className="px-8 py-8  bg-gray-200 rounded-2xl shadow-lg mt-8">
         <h2 className="font-bold text-xl">Introduction</h2>
@@ -130,33 +124,6 @@ const Static: Template<ExternalImageRenderData> = ({
           I&apos;m a developer evangelist at Yext. I&apos;m here to help you
           build amazing things with Yext. Outside of work, I love to ski, read,
           listen to music, play video games, and spend time with my friends and
-          family. I moved to NYC about a year ago and I&apos;m loving it.
-          I&apos;m a developer evangelist at Yext. I&apos;m here to help you
-          build amazing things with Yext. Outside of work, I love to ski, read,
-          listen to music, play video games, and spend time with my friends and
-          family. I moved to NYC about a year ago and I&apos;m loving it.
-          I&apos;m a developer evangelist at Yext. I&apos;m here to help you
-          build amazing things with Yext. Outside of work, I love to ski, read,
-          listen to music, play video games, and spend time with my friends and
-          family. I moved to NYC about a year ago and I&apos;m loving it.
-          I&apos;m a developer evangelist at Yext. I&apos;m here to help you
-          build amazing things with Yext. Outside of work, I love to ski, read,
-          listen to music, play video games, and spend time with my friends and
-          family. I moved to NYC about a year ago and I&apos;m loving it.
-          I&apos;m a developer evangelist at Yext. I&apos;m here to help you
-          build amazing things with Yext. Outside of work, I love to ski, read,
-          listen to music, play video games, and spend time with my friends and
-          family. I moved to NYC about a year ago and I&apos;m loving it.
-          I&apos;m a developer evangelist at Yext. I&apos;m here to help you
-          build amazing things with Yext. Outside of work, I love to ski, read,
-          listen to music, play video games, and spend time with my friends and
-          family. I moved to NYC about a year ago and I&apos;m loving it.
-          I&apos;m a developer evangelist at Yext. I&apos;m here to help you
-          build amazing things with Yext. Outside of work, I love to ski, read,
-          listen to music, play video games, and spend time with my friends and
-          family. I moved to NYC about a year ago and I&apos;m loving it.
-          I&apos;m a developer evangelist at Yext. I&apos;m here to help you
-          build amazing things with Yext. Outside of work, I love to ski, read,
           listen to music, play video games, and spend time with my friends and
           family. I moved to NYC about a year ago and I&apos;m loving it.
         </p>
