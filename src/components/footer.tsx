@@ -11,7 +11,10 @@ interface FooterProps {
 const Footer = ({ footerContainerStyle }: FooterProps) => {
   return (
     <footer
-      className={twMerge("mx-auto px-5 md:px-14 py-4", footerContainerStyle)}
+      className={twMerge(
+        "mx-auto px-5 md:px-14 py-4 w-full",
+        footerContainerStyle
+      )}
     >
       <Divider />
       <p className="text-xl font-bold">&copy; Aaron Pavlick</p>
