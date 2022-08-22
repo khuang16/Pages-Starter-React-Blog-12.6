@@ -37,7 +37,7 @@ const Home: Template<TemplateRenderProps> = () => {
           <Greeting
             name="Aaron"
             role="Developer Evangelist @ Yext"
-            headshot="src/images/headshot.jpeg"
+            headshot="src/assets/images/headshot.jpeg"
           />
         )}
         InfoContent={() => (
