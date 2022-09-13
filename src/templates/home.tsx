@@ -18,7 +18,6 @@ export const getPath: GetPath<TemplateProps> = () => {
   return `index.html`;
 };
 
-// TODO: mention this to Andrew
 export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = (
   data
 ): HeadConfig => {
@@ -34,12 +33,7 @@ const Home: Template<TemplateRenderProps> = () => {
     <>
       <HomeLayout
         GreetingContent={() => (
-          <Greeting
-            name="Aaron"
-            role="Developer Evangelist @ Yext"
-            // TODO: local url doesn't show up in deploy
-            headshot="src/assets/images/headshot.jpeg"
-          />
+          <Greeting name="Aaron" role="Developer Evangelist @ Yext" />
         )}
         InfoContent={() => (
           <div className="centered-container">
@@ -49,7 +43,7 @@ const Home: Template<TemplateRenderProps> = () => {
               dev_to="https://dev.to/apavlick"
             />
             <InfoSection title="Introduction">
-              <p className="text-lg">
+              <p className=" text-lg">
                 My name is Aaron and I&apos;m a developer evangelist at Yext.
                 This is my first Developer Relations role and I&apos;m really
                 enjoying it! We have a lot of cool, new tools for people looking
@@ -62,13 +56,7 @@ const Home: Template<TemplateRenderProps> = () => {
               <BioSection
                 home="New York, NY"
                 skills={["Yext", "React", "Typescript", "Deno"]}
-                interests={[
-                  "Skiing",
-                  "Podcasts",
-                  "TV",
-                  "Music",
-                  "Hanging out with friends and family",
-                ]}
+                interests={["Skiing", "Podcasts", "TV", "Music"]}
               />
             </InfoSection>
           </div>
