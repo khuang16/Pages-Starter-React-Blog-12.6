@@ -19,11 +19,8 @@ const BlogPost: Template<TemplateRenderProps> = ({
   return (
     <>
       <div className="mx-auto flex w-full max-w-4xl flex-col items-start justify-center">
-        <InfoSection
-          titleCssStyles="text-5xl pb-4"
-          title={"BLOG TITLE"}
-          date={"INSERT DATE HERE"}
-        >
+        <InfoSection titleCssStyles="text-5xl pb-4" title={"BLOG TITLE"}>
+          <p className="font-semibold">{"INSERT DATE"}</p>
           <div className="font-display">{"INSERT BLOG CONTENT"}</div>
         </InfoSection>
       </div>
