@@ -1,4 +1,4 @@
-# SITE-STARTER-REACT-BASIC
+# BLOG-STARTER
 
 This repository provides a basic example of how to start developing a React site on the Yext Sites system.
 
@@ -13,7 +13,6 @@ This repository provides a basic example of how to start developing a React site
    - It's recommend to use nvm: https://github.com/nvm-sh/nvm#installing-and-updating or via brew `brew install nvm`
 
 1. Optional: Have a Yext account (necessary for production builds, deploying on Yext Sites, and pulling local stream document data via `yext pages generate-test-data`). This starter already comes with some localData that can be used for local dev without the need to init with a Yext account.
-
 
 ### Clone this repo and install dependencies
 
@@ -61,8 +60,8 @@ root
 │   └───components
 │   │
 │   └───templates
-│       │   index.tsx
-│       │   static.tsx
+│       │   blog-post.tsx
+│       │   home.tsx
 │   │
 │   └───types
 ```
