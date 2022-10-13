@@ -5,7 +5,11 @@ import {
   GetPath,
   TemplateProps,
   TemplateRenderProps,
+  TemplateConfig,
+  GetHeadConfig,
+  HeadConfig,
 } from "@yext/pages";
+import { Image } from "@yext/pages/components";
 import InfoSection from "../components/info-section";
 import { formatDate, renderBlogContent } from "../util";
 
