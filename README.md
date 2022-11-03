@@ -20,14 +20,19 @@ This repository provides a basic example of how to start developing a React blog
 git clone https://github.com/YextSolutions/pages-starter-react-blog.git
 cd pages-starter-react-blog
 npm install
+npm run dev
 ```
 
 ### Useful commands
 
+#### Primary Commands for Development 
 `yext init` - Authenticates the Yext CLI with your Yext account
 
-`npm run dev` - runs your code against a local dev server using Vite
+`npm run dev` - runs your code against a local dev server using Vite and pulls down data from your Yext Knowledge Graph
 
+`npm run build:serve` - runs a production build of your site which mirrors the production environment. Running this command is recommended before committing your code and initiating a new deploy. 
+
+#### Other CLI Commands
 - All stream documents come from the `localData` folder
 - You can visit either of these urls out of the box
   - http://localhost:3000/index/123
@@ -54,8 +59,6 @@ root
 │   └───templates
 │       │   blog-post.tsx
 │       │   home.tsx
-│   │
-│   └───types
 ```
 
 ### localData
